@@ -4,7 +4,7 @@ const initialState = {
 
 const mapReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'ADD_TILES ':
+    case 'ADD_TILES':
       return {
         ...action.payload
       }
@@ -13,4 +13,4 @@ const mapReducer = (state = initialState, action) => {
   }
 }
 
-export default mapReducer;
+export default mapReducer

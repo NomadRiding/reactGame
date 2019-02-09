@@ -42,26 +42,26 @@ function MapRow(props) {
 function Map(props) {
   return (
     <div
-     style={{
-       position: 'relative',
-       top: '0px',
-       left: '0px',
-       width: '800px',
-       height: '400px',
-       border: '4px solid white',
-     }}
+      style={{
+        position: 'relative',
+        top: '0px',
+        left: '0px',
+        width: '800px',
+        height: '400px',
+        border: '4px solid white',
+      }}
     >
-    {
-        props.tiles.map(row => <MapRow tiles={row} />)
-    }
+      {
+        props.tiles.map( row => <MapRow tiles={row} /> )
+      }
     </div>
   )
 }
 
-function mapStateToProps(state){
+function mapStateToProps(state) {
   return {
     tiles: state.map.tiles,
-  };
+  }
 }
 
-export default connect(mapStateToProps)(Map);
+export default connect(mapStateToProps)(Map)
